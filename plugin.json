@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "shvl-agent-plugin",
-  "version": "1.0.0",
-  "description": "Prepare review-only invoice chase wording and indicative UK B2B calculations from an aged-debtors CSV.",
+  "version": "1.0.1",
+  "description": "Review overdue invoices, receivables totals and recorded case information for a selected SHVL business.",
   "author": {
     "name": "Studea Limited",
     "email": "hello@shvl.app",
@@ -13,7 +13,9 @@
   "license": "MIT",
   "keywords": [
     "shvl",
-    "cursor",
-    "skills"
+    "receivables",
+    "credit-control",
+    "mcp",
+    "cursor"
   ]
 }

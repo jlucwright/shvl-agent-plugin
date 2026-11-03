@@ -3,7 +3,7 @@
   "mcpServers": {
     "shvl": {
       "type": "streamable-http",
-      "url": "https://shvl.app/mcp"
+      "url": "https://shvl.app/mcp/v2"
     }
   }
 }

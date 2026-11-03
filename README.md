@@ -1,21 +1,19 @@
-# SHVL invoice CSV review
+# SHVL workspace review
 
-Prepare review-only invoice chase wording and indicative UK B2B calculations from an aged-debtors CSV.
+Review the selected business's overdue invoices, receivables totals and recorded case information. Start by selecting an authorised SHVL workspace, then inspect its stored accounting source and last sync.
 
-Published by Studea Limited. Product: [shvl](https://shvl.app). Support: hello@shvl.app.
+Published by Studea Limited. [SHVL](https://shvl.app) · Support: hello@shvl.app.
 
-## Install
+## Install and connect
 
-Import this Git repository as an Agent Plugin in Cursor or another compatible client. The package contains the `shvl-csv-review` skill. It has no install scripts, hooks, dependencies or bundled credentials. Material used with Cursor remains subject to the model service and account settings; this package does not upload it to SHVL except when the user authorises a SHVL tool call.
+Import this Git repository as an Agent Plugin in a compatible client. `mcp.json` points to SHVL's existing public read-only endpoint at `https://shvl.app/mcp/v2`. Sign in through OAuth and select a returned workspace. An account alone does not create a workspace or connect accounting software; workspace access and an applicable active trial or subscription are required.
 
-## Connection
+The `shvl-workspace-review` skill covers workspace selection, overdue briefs, receivables health, case search and case detail. It does not send reminders or change accounting records. Live discovery on 3 November 2026 confirmed the ordinary six-tool read-only catalogue. End-to-end Cursor OAuth is not yet verified, so this package is not claimed to be a tested Cursor connection.
 
-The MCP configuration points to SHVL’s hosted read-only endpoint. Anonymous CSV analysis was checked with a fictional fixture on 3 November 2026. Sending a CSV transmits it to SHVL; use only data the user authorises for that purpose. The separate workspace-read tools require OAuth; Cursor workspace authentication is not claimed as verified. No message is sent and no CSV is imported into the account.
+## Scope
 
-## Package layout
+This is the workspace-first scope used by the approved SHVL public connector. It is not the separate expanded developer API. The historical CSV helper and CSV-led package were removed from this package in version 1.0.1. The server retains a legacy optional CSV tool for compatibility; this skill does not use or promote it.
 
-`plugin.json` declares the portable Agent Plugins manifest. `skills/` contains the product-specific review workflow. See the skill for inputs, boundaries and an example.
+Material used with an AI client remains subject to that client and model service's data settings. This package contains no install scripts, hooks, dependencies or credentials. Only authorised workspace data should be shared with the client.
 
-MIT applies to these package files. Product names and service access remain subject to their respective terms.
-
-`.plugin/plugin.json` repeats public metadata for Cursor Directory’s current indexer, which does not read the standard root manifest for listing metadata. The root manifest remains the portable runtime contract. Logo URLs reference existing company website icons.
+Root `plugin.json` is the Agent Plugins manifest. `.plugin/plugin.json` mirrors public metadata for Cursor Directory's current indexer. Logo URLs refer to the existing company website icon. MIT applies to these package files; product names and service access remain subject to their respective terms.
