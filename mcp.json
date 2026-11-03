@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "shvl": {
+      "type": "streamable-http",
+      "url": "https://shvl.app/mcp"
+    }
+  }
+}

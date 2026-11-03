@@ -1,0 +1,19 @@
+{
+  "name": "shvl-agent-plugin",
+  "version": "1.0.0",
+  "description": "Prepare review-only invoice chase wording and indicative UK B2B calculations from an aged-debtors CSV.",
+  "author": {
+    "name": "Studea Limited",
+    "email": "hello@shvl.app",
+    "url": "https://shvl.app"
+  },
+  "homepage": "https://shvl.app",
+  "repository": "https://github.com/jlucwright/shvl-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "shvl",
+    "cursor",
+    "skills"
+  ],
+  "logo": "https://shvl.app/img/favicon-256.png"
+}
