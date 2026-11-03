@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "shvl-agent-plugin",
-  "version": "1.0.1",
-  "description": "Review overdue invoices, receivables totals and recorded case information for a selected SHVL business.",
+  "version": "1.0.2",
+  "description": "Read overdue invoices, synced Xero invoices and contacts, and live Xero financial reports for a selected SHVL business.",
   "author": {
     "name": "Studea Limited",
     "email": "hello@shvl.app",
@@ -16,6 +16,8 @@
     "receivables",
     "credit-control",
     "mcp",
-    "cursor"
+    "cursor",
+    "xero",
+    "financial-reports"
   ]
 }

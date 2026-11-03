@@ -1,6 +1,6 @@
 # SHVL workspace review
 
-Review the selected business's overdue invoices, receivables totals and recorded case information. Start by selecting an authorised SHVL workspace, then inspect its stored accounting source and last sync.
+Read the selected business's overdue invoices, synced Xero invoices and contacts, and live Xero financial reports. Start by selecting an authorised SHVL workspace, then inspect its stored accounting source and last sync.
 
 Published by Studea Limited. [SHVL](https://shvl.app) · Support: hello@shvl.app.
 
@@ -8,7 +8,7 @@ Published by Studea Limited. [SHVL](https://shvl.app) · Support: hello@shvl.app
 
 Import this Git repository as an Agent Plugin in a compatible client. `mcp.json` points to SHVL's existing public read-only endpoint at `https://shvl.app/mcp/v2`. Sign in through OAuth and select a returned workspace. An account alone does not create a workspace or connect accounting software; workspace access and an applicable active trial or subscription are required.
 
-The `shvl-workspace-review` skill covers workspace selection, overdue briefs, receivables health, case search and case detail. It does not send reminders or change accounting records. Live discovery on 3 November 2026 confirmed the ordinary six-tool read-only catalogue. End-to-end Cursor OAuth is not yet verified, so this package is not claimed to be a tested Cursor connection.
+The `shvl-workspace-review` skill covers workspace selection, overdue briefs, receivables health, case search and detail, synced Xero invoice/contact search and detail, and live Profit and Loss, Balance Sheet and Trial Balance reports for explicit dates. Standard connections are read-only. Xero reads require owner access to the selected business and its connected Xero organisation; live reports also require report permission. Invoice/contact results use the latest completed sync. Creating reviewed Xero drafts requires a separately approved write connection and approval of the exact action. Standard access cannot create, authorise, pay or send records. Live QA on 3 November 2026 confirmed the ordinary 12-tool read-only catalogue. End-to-end Cursor OAuth is not yet verified, so this package is not claimed to be a tested Cursor connection.
 
 ## Scope
 
