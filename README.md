@@ -8,6 +8,8 @@ Published by Studea Limited. [SHVL](https://shvl.app) · Support: hello@shvl.app
 
 Import this Git repository as an Agent Plugin in a compatible client. `mcp.json` points to SHVL's existing public read-only endpoint at `https://shvl.app/mcp/v2`. Sign in through OAuth and select a returned workspace. An account alone does not create a workspace or connect accounting software; workspace access and an applicable active trial or subscription are required.
 
+Cursor supports the root `plugin.json` Agent Plugins format. Use [Cursor’s plugin installation and management guidance](https://cursor.com/docs/plugins) for your account; an official Marketplace listing requires Cursor review. The community Cursor Directory listing is separate.
+
 ### Hermes OAuth setup
 
 In a Hermes installation, include its declared MCP extra with `hermes pm install --extra mcp`, then install and enable this plugin. The portable `mcp.json` supplies the public tool catalogue. For Hermes's native OAuth login flow, add the SHVL server explicitly:
