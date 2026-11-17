@@ -6,7 +6,7 @@ Published by Studea Limited. [SHVL](https://shvl.app) · Support: hello@shvl.app
 
 ## Gemini CLI
 
-Review overdue invoices, receivables health and recorded SHVL cases.
+Review overdue invoices, synced Xero records and live financial reports in SHVL.
 
 ```sh
 gemini extensions install https://github.com/jlucwright/shvl-agent-plugin --ref v1.0.0
@@ -14,7 +14,7 @@ gemini extensions install https://github.com/jlucwright/shvl-agent-plugin --ref 
 
 Start Gemini CLI and use `/mcp auth shvl` to sign in through the browser when needed. A SHVL account with access to the requested records and the applicable service plan is required. Installation does not grant account access.
 
-This Gemini extension uses `https://shvl.app/mcp/v2` with an explicit read-only tool allowlist. It exposes `list_shvl_workspaces`, `get_shvl_workspace_status`, `get_credit_control_brief`, `get_receivables_health`, `search_credit_control_cases`, `get_credit_control_case`. The client and model service process the records you request under their data settings.
+This Gemini extension uses `https://shvl.app/mcp/v2` with an explicit read-only tool allowlist. It exposes `list_shvl_workspaces`, `get_shvl_workspace_status`, `get_credit_control_brief`, `get_receivables_health`, `search_credit_control_cases`, `get_credit_control_case`, `search_xero_invoices`, `get_xero_invoice`, `search_xero_contacts`, `get_xero_contact`, `get_xero_financial_report`. The client and model service process the records you request under their data settings.
 
 `gemini-extension.json` and `GEMINI.md` configure Gemini CLI. The existing Agent Plugin files and skills below retain their separate client-specific scope.
 
