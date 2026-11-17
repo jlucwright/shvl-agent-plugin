@@ -4,6 +4,10 @@ Read the selected business's overdue invoices, synced Xero invoices and contacts
 
 Published by Studea Limited. [SHVL](https://shvl.app) · Support: hello@shvl.app.
 
+## Cline, VS Code and GitHub Copilot
+
+[Installation commands, VS Code link and native Copilot configuration](clients/README.md). Browser OAuth and authorised product access are required.
+
 ## Gemini CLI
 
 Review overdue invoices, synced Xero records and live financial reports in SHVL.

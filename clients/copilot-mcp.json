@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "shvl": {
+      "type": "http",
+      "url": "https://shvl.app/mcp/v2",
+      "tools": [
+        "list_shvl_workspaces",
+        "get_shvl_workspace_status",
+        "get_credit_control_brief",
+        "get_receivables_health",
+        "search_credit_control_cases",
+        "get_credit_control_case",
+        "search_xero_invoices",
+        "get_xero_invoice",
+        "search_xero_contacts",
+        "get_xero_contact",
+        "get_xero_financial_report"
+      ]
+    }
+  }
+}
