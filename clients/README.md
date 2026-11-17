@@ -5,12 +5,12 @@
 With Cline CLI installed, run:
 
 ```sh
-cline mcp install shvl --transport http https://shvl.app/mcp/v2
+cline mcp install shvl --transport http https://shvl.app/mcp/v2/oauth
 ```
 
 Complete the installation wizard and use browser OAuth when the client requests sign-in. Use your own SHVL account with access to the requested records. Review requested permissions before consent. Use the read tools for this review workflow; do not approve changes or sends as part of setup.
 
-Cline CLI 3.0.74 saved this endpoint successfully in an isolated profile using the noninteractive `--yes` option. An authenticated account-data read in Cline has not yet been verified.
+Cline CLI 3.0.74 completed browser OAuth and a protected read with an existing fictional QA account on 17 November 2026.
 
 ## Copilot native configuration
 

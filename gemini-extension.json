@@ -1,10 +1,10 @@
 {
   "name": "shvl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Review overdue invoices, synced Xero records and live financial reports in SHVL.",
   "mcpServers": {
     "shvl": {
-      "httpUrl": "https://shvl.app/mcp/v2",
+      "httpUrl": "https://shvl.app/mcp/v2/oauth",
       "includeTools": [
         "list_shvl_workspaces",
         "get_shvl_workspace_status",
@@ -19,10 +19,8 @@
         "get_xero_financial_report"
       ],
       "oauth": {
-        "enabled": true,
+        "enabled": false,
         "scopes": [
-          "openid",
-          "profile",
           "email"
         ]
       }
