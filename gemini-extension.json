@@ -1,0 +1,27 @@
+{
+  "name": "shvl",
+  "version": "1.0.0",
+  "description": "Review overdue invoices, receivables health and recorded SHVL cases.",
+  "mcpServers": {
+    "shvl": {
+      "httpUrl": "https://shvl.app/mcp/v2",
+      "includeTools": [
+        "list_shvl_workspaces",
+        "get_shvl_workspace_status",
+        "get_credit_control_brief",
+        "get_receivables_health",
+        "search_credit_control_cases",
+        "get_credit_control_case"
+      ],
+      "oauth": {
+        "enabled": true,
+        "scopes": [
+          "openid",
+          "profile",
+          "email"
+        ]
+      }
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
